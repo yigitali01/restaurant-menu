@@ -1,0 +1,134 @@
+/* Genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Başlık */
+header {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em; /* Daha küçük ekranlarda başlığı küçült */
+}
+
+/* Menü */
+nav {
+    background: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Menü taşarsa alta geçer */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Ana içerik */
+main {
+    padding: 2em;
+}
+
+main h2 {
+    border-bottom: 2px solid #ff7f50;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 1em; /* Mobilde uygun yazı boyutu */
+}
+
+/* Alt bilgi */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Menü öğeleri dikey sıralansın */
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 0.8em;
+    }
+
+    main {
+        padding: 1em; /* Daha dar boşluklar */
+    }
+
+    main h2 {
+        font-size: 1.3em; /* Başlık boyutunu küçült */
+    }
+
+    main ul li {
+        font-size: 0.9em; /* Liste yazılarını küçült */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Daha küçük başlık */
+    }
+
+    nav ul li a {
+        padding: 0.6em; /* Daha küçük menü öğeleri */
+    }
+
+    main h2 {
+        font-size: 1.2em; /* Başlık boyutunu daha da küçült */
+    }
+
+    main ul li {
+        font-size: 0.8em; /* Liste yazılarını daha küçük yap */
+    }
+
+    footer {
+        font-size: 0.8em; /* Alt bilgi boyutunu küçült */
+    }
+}
